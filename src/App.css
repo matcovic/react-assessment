@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+html,
+body {
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.App {
+  background-color: #fcf9f9;
+}
+
+.carousel-root {
+  margin-top: -64px;
+}
+.carousel .carousel-status,
+.carousel .thumbs-wrapper,
+.carousel .control-dots {
+  display: none;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 30px solid black !important;
+}
+.carousel .control-prev.control-arrow:before {
+  border-right: 30px solid black !important;
+}
+
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+  border-top: 30px solid transparent !important;
+  border-bottom: 30px solid transparent !important;
+}
+
+.carousel.carousel-slider .control-arrow {
+  padding: 5rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel.carousel-slider .control-arrow {
+    padding: 1rem !important;
   }
 }
