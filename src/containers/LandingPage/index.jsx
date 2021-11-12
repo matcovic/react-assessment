@@ -37,8 +37,8 @@ const LandingPage = () => {
   return (
     <>
       <Navbar />
-      <CustomizedCarousel />
       <ThemeProvider theme={overrideTheme}>
+        <CustomizedCarousel />
         <Grid
           container
           style={{
